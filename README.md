@@ -14,4 +14,7 @@ Project documentation
         second parameter is the message, you can either put only string, or an array.
         example = > Controller::apiResponse(200,"Login attempt successfull")
         you can see this functions in app/Http/Controllers/Controller.php
+        
+3. if you want to run the project at port 3000, you can simply run the following command:
+    - php artisan serve --port=3000
        
