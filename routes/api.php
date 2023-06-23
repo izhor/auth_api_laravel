@@ -22,7 +22,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::prefix('auth')->group(function(){
     Route::post('signup', [UserController::class,'signup']);
-    Route::post('login', [UserController::class,'logins']);
+    Route::post('login', [UserController::class,'login']);
 });
 
 Route::middleware('jwt.verify')->group(function(){
